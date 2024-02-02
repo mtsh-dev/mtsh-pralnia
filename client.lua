@@ -60,7 +60,7 @@ Citizen.CreateThread(function()
             end
 
             local pos = vector3(-288.34268188477, 6299.8588867188, 31.492238998413)
-            DrawMarker(27, pos.x, pos.y, pos.z - 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 255, 0, 50, false, true, 2, nil, nil, false)
+            DrawMarker(27, pos.x, pos.y, pos.z - 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 101, 76, 175, 250, false, true, 2, nil, nil, false)
         end
     end
 end)
