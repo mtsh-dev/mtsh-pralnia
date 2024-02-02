@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mtsh-pralnia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#praniePieniedzy {
+    width: 300px;
+    height: 300px;
+    display: none;
+    box-sizing: border-box;
+    border: 2px solid #544caf;
+    border-radius: 0.5vw;
+    background-color: #191C21;
+    position: relative;
+    text-align: center;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-top: 2px solid #544caf;
+    border-left: #191C21;
+    border-right: #191C21;
+    border-bottom: 2px solid #544caf;
+    color: white;
+    background-color: #191e21;
+    border-radius: 0.5vw;
+    margin: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+    background-color: #544caf;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #654caf; 
+}
+#closeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 20px;
+    color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="praniePieniedzy"  class="hidden">
+        <button id="closeButton" onclick="closeUI()">X</button>
+        <h2>Pralnia Pieniędzy</h2>
+        <input type="number" id="amount" placeholder="Ilość brudnej gotówki...">
+        <button onclick="praniePieniedzy()">Gotowe</button>
+    </div>
+
+    <script src="ui.js"></script>
+
+
+</body>
+</html>
